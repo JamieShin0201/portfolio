@@ -18,28 +18,19 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="projects/projects.css" />
+    <script src="projects/projects.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
         <i class="fas fa-sun"></i>
-        <a href="#" style="margin-left: 5px;">Jamie</a>
+        <a href="../index.html" style="margin-left: 5px;">Jamie</a>
       </div>
 
       <ul class="navbar__menu">
-        <li class="navbar__menu__item active" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#skill">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li
-          class="navbar__menu__item"
-          data-link="#testimonials"
-          style="display: none;"
-        >
-          Testimonials
-        </li>
-        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        <a href="../index.html"><li class="navbar__menu__item active">back</li></a>
       </ul>
 
       <!-- Toggle button -->
@@ -63,239 +54,126 @@
         <button class="home__contact">CONTACT ME</button>
       </div>
     </section>
-
-    <!-- About -->
-    <section id="about" class="section section__container">
-      <h1>About me</h1>
-      <p>
-        저는 새로운 기술에 관심이 많고 끊임없이 생각하며 문제 해결을 즐기는
-        개발자입니다.<br />
-        2019년부터 개발자가 되기위해 학원을 다니며 여러 개인 프로젝트(요리
-        쇼핑몰 사이트, 소모임 어플 등),<br />팀 프로젝트(도서판매 사이트)를
-        진행하였고 현재는 신입 백엔드 개발자로 구직중입니다.
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-server"></i>
-          </div>
-          <h2 class="major__title">Back-end</h2>
-          <div class="major__description">
-            Java, Php, Mysql, Linux, Node.js<br />
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-html5"></i>
-          </div>
-          <h2 class="major__title">Front-end</h2>
-          <div class="major__description">HTML, CSS, Vanila JS, JQuery</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-mobile"></i>
-          </div>
-          <h2 class="major__title">Mobile</h2>
-          <div class="major__description">Android</div>
-        </div>
-      </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img src="../imgs/jobs/kitri.png" alt="kitri" class="job__logo" />
-          <div class="job__description">
-            <p class="job__name">웹 개발자 과정</p>
-            <p class="job__period">2019. 3. 25 ~ 2019. 8. 19</p>
-          </div>
-        </div>
-        <div class="job">
-          <img src="../imgs/jobs/nova.png" alt="teamnova" class="job__logo" />
-          <div class="job__description">
-            <p class="job__name">JAVA, 안드로이드, PHP 과정</p>
-            <p class="job__period">2019. 11. 9 ~ 2020. 4. 7</p>
-          </div>
-        </div>
-      </div>
+    <section id="intro">
+      <h1>Yogiro (소모임 어플)</h1>
+      <h2>
+        여러가지 분야의 소모임들을 만들고 <br />모임내에서 게시판, 사진첩,
+        일정만들기 기능들을 이용할수 있는 어플입니다.
+      </h2>
+      <h3>( 개발인원: 1명(혼자), 개발기간: 4주, 사용언어: JAVA )</h3>
     </section>
 
-    <!-- Skills -->
-    <section id="skill" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          웹페이지의 전반적인 동작원리에 대해 이해하고 있습니다.<br />
-          새로운 기술에 대해 두려움이 없고 하루하루 배워가고 있습니다.<br />
-        </p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__description">
-                <span>JAVA</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 80%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>PHP</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>JavaScript</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>C, C++</span>
-                <span>65%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 65%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tool__list">
-                <li><span>Eclipse IDE</span></li>
-                <li><span>PhpStorm</span></li>
-                <li><span>AndroidStudio</span></li>
-                <li><span>Visual Studio Code</span></li>
-              </ul>
-            </div>
-            <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="et__list">
-                <li><span>Git</span></li>
-                <li><span>Math</span></li>
-              </ul>
-            </div>
-          </div>
+    <!-- Project Detail -->
+    <section id="projects">
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/register.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>1. 회원가입</h2>
+          <p>
+            1-1) 관심사 등록 : 1개이상의 관심사를 등록하도록 구현<br />
+            1-2) 이메일, 비밀번호, 이름 정규식을 이용한 예외처리<br />
+            1-3) 프로필사진 등록, DatePicker를 이용한 생년월일 등록<br />
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- Work -->
-    <section id="work" class="section">
-      <div class="section__container">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-          <button class="category__btn selected" data-filter="*">
-            All<span class="category__count"> 8</span>
-          </button>
-          <button class="category__btn" data-filter="front-end">
-            Front-end<span class="category__count"> 8</span>
-          </button>
-          <button class="category__btn" data-filter="back-end">
-            Back-end<span class="category__count"> 8</span>
-          </button>
-          <button class="category__btn" data-filter="android">
-            Android<span class="category__count"> 8</span>
-          </button>
-        </div>
-
-        <div class="work__projects">
-          <a href="#" class="project" target="blank" data-type="front-end">
-            <img src="/imgs/jobs/kitri.png" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>aa</h3>
-              <span>123123</span>
-            </div>
-          </a>
-
-          <a href="#" class="project" target="blank" data-type="front-end">
-            <img src="/imgs/jobs/kitri.png" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>aa</h3>
-              <span>123123</span>
-            </div>
-          </a>
-
-          <a href="#" class="project" target="blank" data-type="back-end">
-            <img src="/imgs/jobs/kitri.png" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>aa</h3>
-              <span>123123</span>
-            </div>
-          </a>
-
-          <a href="#" class="project" target="blank" data-type="android">
-            <img src="/imgs/jobs/kitri.png" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>aa</h3>
-              <span>123123</span>
-            </div>
-          </a>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/login.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>
+            2. 로그인, 로그아웃, 
+            아이디저장, 자동로그인
+          </h2>
+          <p></p>
+          </class>
         </div>
       </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-      <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-          <div class="testimonial">
-            <img
-              src="imgs/testimonial/people1.jpg"
-              alt="People"
-              class="testimonial__avatar"
-            />
-            <div class="testimonial__speech-bubble">
-              <p>
-                aa<br />
-                bb
-              </p>
-              <p class="name"><a href="#">Jamie</a>/ Samsung</p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>
-                aa<br />
-                bb
-              </p>
-              <p class="name"><a href="#">Jamie</a>/ Samsung</p>
-            </div>
-            <img
-              src="imgs/testimonial/people1.jpg"
-              alt="People"
-              class="testimonial__avatar"
-            />
-          </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/edit-profile.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>3. 프로필 변경, 관심사 변경</h2>
+          <p> </p>
+        </div>
+      </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/meeting-list.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>4. 모임 목록</h2>
+          <p> 4-1) RecyclerView를 활용하여 모임 목록을 구현<br />
+            4-2) 카테고리별로 모임을 볼수 있도록 구현</p>
+        </div>
+      </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/join-meeting.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>5. 모임 가입 및 내가 가입한 목록, <br/>
+          내가 만든 목록, 내가 본 목록</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/make-meeting.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>6. 모임 만들기</h2>
+          <p> 6-1) 관심사, 지역, 모임이름과 내용을 입력받도록 구현<br/>
+            6-2) 공공데이터를 활용해 지역을 입력하도록 구현</p>
+        </div>
+      </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/withdraw-meeting.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>7. 모임 탈퇴</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/write-board.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>8. 모임 내 게시판 글 및 댓글, 대댓글 작성</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/meeting-gallery.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>9. 모임 내 사진첩</h2>
+          <p>9-1)ImagePicker를 이용해 다중사진 업로드가 가능하도록 구현</p>
+        </div>
+      </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/make-meeting-plan.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>10. 소모임 내 정모 만들기</h2>
+          <p>10-1)DatePicker와 TimePicker를 이용해 날짜와 시간을 입력하도록 구현<br/>
+            10-2)Naver static map API과 dynamic map API을 이용하여 지도를 입력하도록 구현</p>
+        </div>
+      </div>
+      <div class="project">
+        <video controls width="350">
+          <source src="/media/yogiro/handler-game.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>11. 핸들러를 이용한 이상한 가위바위보 게임</h2>
+          <p></p>
         </div>
       </div>
     </section>
