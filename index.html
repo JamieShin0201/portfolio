@@ -25,8 +25,8 @@
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <img class="icon" src="imgs/favicon.png" alt="brand logo" />
-        <a href="#">Jamie</a>
+        <i class="fas fa-sun"></i>
+        <a href="#" style="margin-left: 5px;">Jamie</a>
       </div>
 
       <ul class="navbar__menu">
@@ -34,7 +34,11 @@
         <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#skill">Skills</li>
         <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">
+        <li
+          class="navbar__menu__item"
+          data-link="#testimonials"
+          style="display: none;"
+        >
           Testimonials
         </li>
         <li class="navbar__menu__item" data-link="#contact">Contact</li>
@@ -54,7 +58,9 @@
           alt="Jamie's profile photo"
           class="home__avatar"
         />
-        <h1 class="home__title">Hello,<br />I'm Dream Coder</h1>
+        <h1 class="home__title">
+          안녕하세요<br />저는 창의적인 개발자 신종명입니다.
+        </h1>
         <h2 class="home__description">하루하루 성장하는 개발자</h2>
         <button class="home__contact">CONTACT ME</button>
       </div>
@@ -66,9 +72,9 @@
       <p>
         저는 새로운 기술에 관심이 많고 끊임없이 생각하며 문제 해결을 즐기는
         개발자입니다.<br />
-        2019년부터 개발자가 되기위해 학원을 다니며 여러 개인 프로젝트, 팀
-        프로젝트를 진행하였고<br />
-        현재는 신입 백엔드 개발자로 구직중입니다.
+        2019년부터 개발자가 되기위해 학원을 다니며 여러 개인 프로젝트(요리
+        쇼핑몰 사이트, 소모임 어플 등),<br />팀 프로젝트(도서판매 사이트)를
+        진행하였고 현재는 신입 백엔드 개발자로 구직중입니다.
       </p>
       <div class="about__majors">
         <div class="major">
@@ -77,8 +83,7 @@
           </div>
           <h2 class="major__title">Back-end</h2>
           <div class="major__description">
-            Java, Php, JavaScript, JavaScript, <br />
-            JavaScript, Php
+            Java, Php, Mysql, Linux, Node.js<br />
           </div>
         </div>
         <div class="major">
@@ -86,14 +91,14 @@
             <i class="fab fa-html5"></i>
           </div>
           <h2 class="major__title">Front-end</h2>
-          <div class="major__description">Java, Php, JavaScript,</div>
+          <div class="major__description">HTML, CSS, Vanila JS, JQuery</div>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fas fa-mobile"></i>
           </div>
           <h2 class="major__title">Mobile</h2>
-          <div class="major__description">Java, Php, JavaScript,</div>
+          <div class="major__description">Android</div>
         </div>
       </div>
       <div class="about__jobs">
@@ -120,65 +125,64 @@
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
-          something<br />
-          something<br />
-          something
+          웹페이지의 전반적인 동작원리에 대해 이해하고 있습니다.<br />
+          새로운 기술에 대해 두려움이 없고 하루하루 배워가고 있습니다.<br />
         </p>
         <div class="skillset">
           <div class="skillset__left">
             <h3 class="skillset__title">Skills</h3>
             <div class="skill">
               <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
+                <span>JAVA</span>
+                <span>80%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value"></div>
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>PHP</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
-                <span>99%</span>
+                <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+                <div class="skill__value" style="width: 70%;"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
+                <span>CSS</span>
+                <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+                <div class="skill__value" style="width: 70%;"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
+                <span>JavaScript</span>
+                <span>70%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+                <div class="skill__value" style="width: 70%;"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
+                <span>C, C++</span>
+                <span>65%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value"></div>
+                <div class="skill__value" style="width: 65%;"></div>
               </div>
             </div>
           </div>
@@ -186,17 +190,15 @@
             <div class="tools">
               <h3 class="skillset__title">Tools</h3>
               <ul class="tool__list">
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
+                <li><span>Eclipse IDE</span></li>
+                <li><span>PhpStorm</span></li>
+                <li><span>AndroidStudio</span></li>
                 <li><span>Visual Studio Code</span></li>
               </ul>
             </div>
             <div class="etc">
               <h3 class="skillset__title">Etc</h3>
               <ul class="et__list">
-                <li><span>Git</span></li>
                 <li><span>Git</span></li>
                 <li><span>Math</span></li>
               </ul>
@@ -210,52 +212,64 @@
     <section id="work" class="section">
       <div class="section__container">
         <h1>My work</h1>
-        <h3>Projects</h3>
+        <h2>Projects</h2>
+        <p>
+          프로젝트를 클릭하시면 해당 프로젝트의 동작을 볼수있는 페이지로
+          이동합니다.
+        </p>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
-            All<span class="category__count"> 8</span>
+            All<span class="category__count"> 2</span>
           </button>
           <button class="category__btn" data-filter="front-end">
-            Front-end<span class="category__count"> 8</span>
+            Front-end<span class="category__count"> 0</span>
           </button>
           <button class="category__btn" data-filter="back-end">
-            Back-end<span class="category__count"> 8</span>
+            Back-end<span class="category__count"> 1</span>
           </button>
           <button class="category__btn" data-filter="android">
-            Android<span class="category__count"> 8</span>
+            Android<span class="category__count"> 1</span>
           </button>
         </div>
 
         <div class="work__projects">
-          <a href="#" class="project" target="blank" data-type="front-end">
-            <img src="/imgs/jobs/kitri.png" alt="" class="project__img" />
+          <a
+            href="../projects/yumyum.html"
+            class="project"
+            target="_self"
+            data-type="back-end"
+          >
+            <img
+              src="/imgs/projects/yumyumTitle.png"
+              alt=""
+              class="project__img"
+            />
             <div class="project__description">
-              <h3>aa</h3>
-              <span>123123</span>
+              <h3>YumYum (요리 관련 플랫폼)</h3>
+              <span
+                >요리 레시피를 공유하거나 <br />
+                요리관련 물품들을 구매할수 있는 <br />쇼핑몰입니다.</span
+              >
             </div>
           </a>
 
-          <a href="#" class="project" target="blank" data-type="front-end">
-            <img src="/imgs/jobs/kitri.png" alt="" class="project__img" />
+          <a
+            href="../projects/yogiro.html"
+            class="project"
+            target="_self"
+            data-type="android"
+          >
+            <img
+              src="/imgs/projects/yogiroTitle.png"
+              alt=""
+              class="project__img"
+            />
             <div class="project__description">
-              <h3>aa</h3>
-              <span>123123</span>
-            </div>
-          </a>
-
-          <a href="#" class="project" target="blank" data-type="back-end">
-            <img src="/imgs/jobs/kitri.png" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>aa</h3>
-              <span>123123</span>
-            </div>
-          </a>
-
-          <a href="#" class="project" target="blank" data-type="android">
-            <img src="/imgs/jobs/kitri.png" alt="" class="project__img" />
-            <div class="project__description">
-              <h3>aa</h3>
-              <span>123123</span>
+              <h3>Yogiro (소모임 어플)</h3>
+              <span
+                >여러가지 분야의 소모임들을 만들고 <br />모임내에서 게시판,
+                사진첩, 일정만들기 기능들을 이용할수 있습니다.
+              </span>
             </div>
           </a>
         </div>
