@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamie's Portfolio</title>
+    <meta
+      name="decription"
+      content="Portfolio for world-renowned software engineer Jamie"
+    />
+    <meta name="author" content="Jamie" />
+    <link rel="icon" type="image/png" href="./imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/e195435099.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="projects/projects.css" />
+    <script src="projects/projects.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-sun"></i>
+        <a href="./index.html" style="margin-left: 5px;">Jamie</a>
+      </div>
+
+      <ul class="navbar__menu">
+        <a href="./index.html"
+          ><li class="navbar__menu__item active">back</li></a
+        >
+      </ul>
+
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="./imgs/profile.png"
+          alt="Jamie's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">
+          안녕하세요<br />저는 창의적인 개발자 신종명입니다.
+        </h1>
+        <h2 class="home__description">하루하루 성장하는 개발자</h2>
+        <button class="home__contact">CONTACT ME</button>
+      </div>
+    </section>
+    <section id="intro">
+      <h1>YumYum (요리 관련 웹페이지)</h1>
+      <h2>
+        요리 레시피를 공유하거나 <br />요리관련 물품들을 구매할수 있는 사이트
+        입니다.
+      </h2>
+      <h3>( 개발인원: 1명(혼자), 개발기간: 4주, 사용언어: PHP )</h3>
+    </section>
+
+    <!-- Project Detail -->
+    <section id="projects">
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/register.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>1. 회원가입</h2>
+          <p>
+            1-1) 이메일, 비밀번호, 이름 정규식을 이용한 예외처리<br />
+            1-2) PHPMailer를 이용한 이메일 인증
+          </p>
+        </div>
+      </div>
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/login.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>2. 로그인, 아이디저장, 자동로그인, 카카오로그인</h2>
+          <p>
+            2-1) 쿠키를 이용한 아이디저장, 자동로그인 구현<br />
+            2-2) 카카오로그인 api를 이용하여 카카오 로그인 구현
+          </p>
+        </div>
+      </div>
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/popup.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>3. 팝업창</h2>
+          <p>3-1) 쿠키를 이용하여 팝업창을 구현<br /></p>
+        </div>
+      </div>
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/write-board.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>4. 게시판 글쓰기</h2>
+          <p>
+            4-1) 네이버 스마트 에디터를 활용하여 글과 이미지 모두 업로드
+            가능하도록 구현<br />
+            4-2) 대표이미지 업로드 구현
+          </p>
+        </div>
+      </div>
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/comment-board.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>5. 게시판 댓글, 대댓글 입</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/show-board.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>6. 게시판 카테고리별 보기</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/search.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>7. 검색</h2>
+          <p>
+            7-1) AJAX를 활용한 자동완성 기능<br />
+            7-2) Union All을 활용하여 전체검색
+          </p>
+        </div>
+      </div>
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/keeping.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>8. 쇼핑 장바구니, 최근본 목록</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="project" style="width: 1200px;">
+        <video controls width="700" height="400">
+          <source src="media/yumyum/buy.mp4" type="video/mp4" />
+        </video>
+        <div class="project__description">
+          <h2>9. 구매하기</h2>
+          <p>
+            9-1) 다음 우편번호 api를 활용하여 우편번호 검색<br />
+            9-2) 카카오페이 api를 이용한 결제기능
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">jamieshin1450@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/JamieShin0201/" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://github.com/JamieShin0201/" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <p class="contact__rights">2020 Jamie - All rights reserved</p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up visible">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
