@@ -219,8 +219,18 @@ p {
 
 .project {
   display: flex;
-  width: 800px;
   margin: 16px;
+  width: 1200px;
+}
+
+.mobile__project {
+  display: flex;
+  margin: 16px;
+  width: 1200px;
+}
+
+.mobile__project video {
+  border-radius: 7%;
 }
 
 .project__description {
@@ -275,7 +285,7 @@ p {
 }
 
 /* For below 768px screen width */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   :root {
     /* Font size */
     --font-large: 30px;
@@ -321,5 +331,42 @@ p {
     font-size: 30px;
     right: 16px;
     bottom: 16px;
+  }
+
+  .project {
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile__project {
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project video {
+    width: 600px;
+    height: 400px;
+  }
+
+  .project__description {
+    width: 600px;
+    float: left;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project video {
+    width: 400px;
+    height: 300px;
+  }
+  .project__description {
+    width: 400px;
   }
 }
